@@ -1,4 +1,5 @@
-'use client';  // Add this line!
+'use client';
+
 import { Box, Typography } from '@mui/material'
 
 export default function Logo() {

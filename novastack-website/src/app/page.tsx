@@ -1,6 +1,6 @@
 'use client'
 
-import { Container, Typography, Stack } from '@mui/material'
+import { Container, Typography, Stack, Link as MuiLink } from '@mui/material'
 import Link from 'next/link'
 import Logo from '../components/logo'
 
@@ -18,12 +18,14 @@ export default function HomePage() {
           </Typography>
           <Typography color="text.secondary">
             Contact:{' '}
-            <a href="mailto:info@novastack.com.au">info@novastack.com.au</a>
+            <MuiLink href="mailto:info@novastack.com.au" color="primary">
+              info@novastack.com.au
+            </MuiLink>
           </Typography>
           <Typography sx={{ mt: 2 }}>
-            <Link href="/about" style={{ color: '#19b5fe', textDecoration: 'none' }}>
+            <MuiLink component={Link} href="/about" color="primary" underline="hover">
               → About Us
-            </Link>
+            </MuiLink>
           </Typography>
         </Stack>
       </Stack>
